@@ -6,6 +6,7 @@ found everywhere On land
 On ocean
 On space
 On air
+_________________________________________________________________________________________
 Core Principles: The CIA Triad
 The "CIA Triad" is the foundational model for cybersecurity: 
 
@@ -16,7 +17,7 @@ Availability: Ensuring that systems and data are accessible when needed.
 Linux is considered the backbone of modern cybersecurity serving as the primary 
 operating system for both attackers and defenders. it is used instead of windows because it
  is open source, and to avoiding self-sabotage.
- 
+ _________________________________________________________________________________________
 Cyber is classifed into two teams:
 Defense(Blue teaming)
 Offense(Red teaming)
@@ -25,7 +26,9 @@ detect,block and mitigate threats continously(24/7),considered to be a trail gro
 Red:- penetration testing, vulnerability, red team.they exploit weaknesses to reach a target,
 it a time boxed task.considered to be a battle ground.
 Ethio-cert the largest SOC/ defense team in Ethiopia
+____________________________________________________________________________________________
 Sunday
+
 File system hierarchy standard
 The root directory (/) is the starting point for all files. 
 * /bin & /sbin: Essential executable programs (binaries). /bin contains command for all 
