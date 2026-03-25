@@ -3,17 +3,19 @@ Vim (short for **Vi IMproved**): keyboard-driven text editor used in Linux and 
 - **Insert Mode:** For typing text normally. Press `i` in Normal Mode to enter.
 - **Command-Line Mode:** For saving, quitting, and advanced settings. Press `:` in Normal Mode to enter.
 - **Visual Mode:** For selecting blocks of text to manipulate (cut/copy). Press `v` for characters, `V` for lines, or `Ctrl+v` for blocks
-**Basic Commands Reference
+________________________________________________________________________________________________________________________
+Basic Commands Reference
 
 | Action          | Command        | Explanation                                                |
 | --------------- | -------------- | ---------------------------------------------------------- |
-| Open File   | `vim filename` | Opens an existing file or creates a new one.               |
-| Save        | :w           | W**rites (saves) changes to the disk.                    |
-| **Quit        | :q           | Q**uits the editor (fails if there are unsaved changes). |
-| **Save & Quit | :wq` or :x`  | Saves and exits in one step.                               |
-| Force Quit  | :q!          | Quits without saving any changes.                          |
-| Undo        | u            | U**ndoes the last action.                                |
-| **Redo        | Ctrl + r     | R**edoes the action you just undid.                      |
+| Open File        `vim filename`       Opens an existing file or creates a new one.               
+| Save              :w                  W**rites (saves) changes to the disk.                    
+| **Quit            :q                  Q**uits the editor (fails if there are unsaved changes). 
+| **Save & Quit     :wq` or :x`         Saves and exits in one step.                               
+| Force Quit        :q!                 Quits without saving any changes.                          
+| Undo               u                  U**ndoes the last action.                                
+| **Redo           Ctrl + r             R**edoes the action you just undid.  
+________________________________________________________________________________________________________________________
 **Navigation & Editing
 In Normal Mode, you use specific keys to move around without mouse around.
 - Basic Movement:** `h` (left), `j` (down), `k` (up), `l` (right).
@@ -26,7 +28,7 @@ In Normal Mode, you use specific keys to move around without mouse around.
 - Search:** Type `/` followed by your word (e.g., `/error`) and press `Enter`. Use `n` for next match and `N` for previous.
 - **Global Replace:** `:%s/old/new/g` replaces every occurrence of "old" with "new" in the entire file.
 **top and htop :- are command-line utilites used for real-time system monitors in Linux, displaying CPU usage, memory consumption, and list of running processes.
-
+________________________________________________________________________________________________________________________
 The `top` Command
 `top` (Table of Processes) is the traditional, built-in tool found on almost every Unix-like system. 
 - Availability:** Pre-installed by default; no manual installation is usually required.
@@ -37,7 +39,7 @@ The `top` Command
     - k: **K**ill a process (requires entering the PID).
     - q: **Q**uit the application.
     - z: Toggle color/monochrome mode. 
-
+________________________________________________________________________________________________________________________
 The `htop` Command
 
 `htop` is a modern, interactive process viewer that serves as an enhanced alternative to `top`. 
@@ -51,7 +53,7 @@ The `htop` Command
     - F5: Toggle **Tree view** to show parent/child relationships.
     - F6: Open the **Sort** menu to select columns easily.
     - F9: **Kill** a selected process directly via a signal menu. 
-
+________________________________________________________________________________________________________________________
 Key Differences
 |Feature|top|htop|
 |---|---|---|
@@ -61,49 +63,36 @@ Key Differences
 |Scrolling|Limited (keyboard only)|Full horizontal/vertical scrolling|
 |Process Tree|Basic (hidden by default)|Rich, interactive tree mode (F5)|
 Nano** is a simple, beginner-friendly command-line text editor for Linux and other Unix-like systems. Unlike more complex editor like Vim, nano is **modeless, meaning you can start typing immediately after opening it without switching between "insert" and "command" modes.
-
+________________________________________________________________________________________________________________________
 Interface & Navigation
-
-- Shortcuts:** Common commands are listed at the bottom of the screen.
-- **Key Symbols:** The caret symbol (^) represents the **Ctrl** key, and **M** represents the **Meta** key (usually **Alt** or **Esc).
-- Movement:** Use the arrow keys for basic navigation or **Page Up/Down** to scroll.
-
+- Shortcuts: Common commands are listed at the bottom of the screen.
+- Key Symbols:The caret symbol (^) represents the **Ctrl** key, and **M** represents the **Meta** key (usually **Alt** or **Esc).
+- Movement: Use the arrow keys for basic navigation or **Page Up/Down** to scroll.
+_________________________________________________________________________________________________________________________
 Essential Shortcuts
-
 |Task|Shortcut|Description|
 |---|---|---|
-|**Save|Ctrl + O|"Writes Out" the current buffer to the file.|
-|Exit|Ctrl + X|Closes nano; prompts to save if changes were made.|
-|Help|Ctrl + G|Opens the full built-in help manual.|
-|Search|Ctrl + W|"Where is" search tool to find text in the file.|
-|Replace|Alt + R|Finds a term and allows you to replace it.|
-|Cut Line|Ctrl + K|"Kuts" (deletes) the current line.|
-|Paste Line|Ctrl + U|"Uncuts" (pastes) the last cut line.|
-|Undo/Redo|Alt + U / E|Undo or redo your last action.|
-
+|**Save|Ctrl + O|"Writes Out" the current buffer to the file.
+|Exit|Ctrl + X|Closes nano; prompts to save if changes were made.
+|Help|Ctrl + G|Opens the full built-in help manual.
+|Search|Ctrl + W|"Where is" search tool to find text in the file.
+|Replace|Alt + R|Finds a term and allows you to replace it.
+|Cut Line|Ctrl + K|"Kuts" (deletes) the current line.
+|Paste Line|Ctrl + U|"Uncuts" (pastes) the last cut line.
+|Undo/Redo|Alt + U / E|Undo or redo your last action.
+_________________________________________________________________________________________________________________________
 Advanced Tips
 
-- Open at Specific Line:** Use `nano +line_number filename` to jump straight to a specific line.
-- **Read-Only Mode:** Open a file with `nano -v filename` to prevent accidental edits.
-- **Disable Line Wrapping:** When editing system configuration files, use `nano -w filename` to prevent automatic word wrapping, which can break configs.
-    
+- Open at Specific Line: Use `nano +line_number filename` to jump straight to a specific line.
+- Read-Only Mode: Open a file with `nano -v filename` to prevent accidental edits.
+- Disable Line Wrapping: When editing system configuration files, use `nano -w filename` to prevent automatic word wrapping, which can break configs.
+__________________________________________________________________________________________________________________________
 
-**Sunday
+Sunday
 
 Network: a collection of two or more interconnected devices (such as computers, servers, or smartphones) that communicate with each other to share resources and information
 
 networks are classified by the geographic area they cover, ranging from a single person to the entire globe. The primary types are **PAN**, **LAN**, **MAN**, and **WAN**. 
-
-Comparison Table
-
-|Feature|PAN|LAN|MAN|WAN|
-|---|---|---|---|---|
-|Stands For|Personal Area Network|Local Area Network|Metropolitan Area Network|Wide Area Network|
-|Typical Range|Up to 10 meters [11, 16]|100m to 1 km [4, 6]|5 km to 50 km [11, 16]|Country to Global [16, 21]|
-|Speed|Moderate (Bluetooth) [11]|Very High (up to 10 Gbps) [6, 21]|Average [21, 24]|Relatively Low [21, 24]|
-|Example|Phone to earbuds [16]|Home or office Wi-Fi [16]|City cable TV network [6]|The Internet [4, 16]|
-
----
 
 1. PAN (Personal Area Network)
 
@@ -131,7 +120,7 @@ Comparison Table
 - Purpose: Facilitates global communication and remote access to resources.
 - Technology: Utilizes satellites, leased telephone lines, and fiber optic backbones.
 - Pros: Provides nearly unlimited connectivity; the **Internet** is the most well-known public WAN
-
+___________________________________________________________________________________________________________________________
 IP address (Internet Protocol address) 
 it is a unique numerical label assigned to every device on a network. It serves two main purposes: identifying the device and providing its location so that data packets can be sent to the correct destination.
 
@@ -146,7 +135,7 @@ Traditionally, IPv4 addresses (32-bit numbers usually written as four decimal se
 | Class D                 | 224 – 239         | N/A                 | Reserved for Multicast (sending data to groups) |
 | Class E                 | 240 – 255         | N/A                 | Reserved for Experimental and research use      |
 
-
+__________________________________________________________________________________________________________________________
 ## Public vs. Private IP Addresses
 
 Addresses are also categorized by where they are used:
