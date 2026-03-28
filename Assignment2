@@ -42,7 +42,7 @@ Web and File Services
 * 21 (TCP): FTP Control – Used for sending commands and login information to a file server.
 * 80 (TCP): HTTP – The standard port for unencrypted web traffic.
 * 443 (TCP): HTTPS – The secure version of HTTP, using encryption (SSL/TLS) for safe web browsing.
-* 8080 (TCP): HTTP Proxy – Often used as an alternative to port 80 or for web proxy services. [1, 4, 5, 6, 7, 8] 
+* 8080 (TCP): HTTP Proxy – Often used as an alternative to port 80 or for web proxy services. 
 Remote Access and Management
 * 22 (TCP): SSH – Secure Shell; used for secure remote login and file transfers.
 * 23 (TCP): Telnet – An older, unencrypted protocol for remote terminal access.
